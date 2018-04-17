@@ -14,7 +14,7 @@
 // FUNCTION DEFINITIONS GO HERE
 ///////////////////////////////////////////////////////////////////
 
-void make_triFreq(std:: vector <int> triFreq){
+void make_triFreq(std:: vector <int> &triFreq){
     for(int i = 0; i < 17575; i++){
         triFreq.push_back(0);
     }

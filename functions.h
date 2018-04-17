@@ -9,22 +9,21 @@
 // INCLUDES GO HERE
 ///////////////////////////////////////////////////////////////////
 #include "bigint/bigint.h"
+#include <iostream>
 #include <vector>
 #include <string>
 #include <stdint.h>
 #include <fstream>
-#include <iostream>
+#include <unordered_map>
+#include <cmath>
+
 
 
 ///////////////////////////////////////////////////////////////////
 // FUNCTION HEADERS GO HERE
 ///////////////////////////////////////////////////////////////////
-class frequencies{
 
-public:
-void readFile();
-
-
-};
+std::vector<int> triFreq;
 
 #endif
+

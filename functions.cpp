@@ -20,6 +20,8 @@ void make_triFreq(std:: vector <int> triFreq){
     }
 }
 frequencies::frequencies(std::string filename, std:: vector <int> triFreq){
+    make_triFreq(std:: vector <int> triFreq);
+    
     std::ifstream infile;
     infile.open(filename);
 

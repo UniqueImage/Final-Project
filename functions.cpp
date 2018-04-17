@@ -35,9 +35,13 @@ frequencies::frequencies(std::string filename, std:: vector <int> triFreq){
             int j = 0;
             for(int i = 0; i < 3; i++){
                 char index = str[i];
-                j += (int(index) - 97) + pow(26, expon);
-                triFreq[j] += 1;
-                expon -= 1;
+                j += (int(index) - 97) * pow(26, expon);
+                if(expon == 0){
+                    triFreq[j] += 1;
+                }
+                else{
+                    expon -= 1;
+                }
             }
             str = "";
         }

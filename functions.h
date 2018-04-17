@@ -20,17 +20,22 @@
 // FUNCTION HEADERS GO HERE
 ///////////////////////////////////////////////////////////////////
 class frequencies{
-  private:
+private:
     std:: vector <int> triFreq;
-
-  public:
+    
+public:
     void readFile();
-    void make_triFreq(std:: vector <int> triFreq);
+    void make_triFreq(std:: vector <int> triFreq){
+        for(int i = 0; i < 17575; i++){
+            triFreq.push_back(0);
+        }
+    }
     frequencies(std::string filename, std:: vector <int> triFreq);
-
-
+    
+    
 };
 
 
 
 #endif
+

@@ -15,17 +15,18 @@
 ///////////////////////////////////////////////////////////////////
 
 frequencies::frequencies(std::string filename, std:: vector <int> triFreq){
-    make_triFreq(std:: vector <int> &triFreq);
+    
+    make_triFreq(triFreq);
     
     std::ifstream infile;
     infile.open(filename);
-
+    
     std::string str;
     char ch;
     char newCh;
-
-
-
+    
+    
+    
     while (infile.get(ch)) {
         if(str.length() == 3){
             int expon = 2;
@@ -42,20 +43,21 @@ frequencies::frequencies(std::string filename, std:: vector <int> triFreq){
             }
             str = "";
         }
-
+        
         if(ch - '\0' >= 65 && ch - '\0' <= 90){
             newCh = tolower(ch);
             str += newCh;
         }
-
+        
         if(ch - '\0' >= 97 && ch - '\0' <= 122){
             str += newCh;
         }
-
+        
     }
-
+    
     infile.close();
     for (std::vector<int>::iterator i = triFreq.begin(); i != triFreq.end(); ++i){
-    std::cout << *i << ' ';
-  }
+        std::cout << *i << ' ';
+    }
 }
+

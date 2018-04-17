@@ -14,13 +14,13 @@
 // FUNCTION DEFINITIONS GO HERE
 ///////////////////////////////////////////////////////////////////
 
-void make_triFreq(std:: vector <int> &triFreq){
+void make_triFreq(std:: vector <int> triFreq){
     for(int i = 0; i < 17575; i++){
         triFreq.push_back(0);
     }
 }
 frequencies::frequencies(std::string filename, std:: vector <int> triFreq){
-    make_triFreq(std:: vector <int> triFreq);
+    make_triFreq(std:: vector <int> &triFreq);
     
     std::ifstream infile;
     infile.open(filename);

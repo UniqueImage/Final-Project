@@ -13,12 +13,14 @@ int main(int argc, char *argv[]) {
     ///////////////////////////////////////////////////////////////////
     // MAKE YOUR OWN MAIN.
     ///////////////////////////////////////////////////////////////////
-    frequencies();
-    frequencies f("testing_languages/bork");
-    
-    
+
+    frequencies(); //intializes a new frequency
+
+    frequencies f (argv[1]); // intializes if something is entered
+
     (void) argc;
+
     (void) argv;
-    
+
     return 0;
 }

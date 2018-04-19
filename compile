@@ -14,6 +14,9 @@ rm -f $output
 
 # Compile:
 $compiler $FLAGS -std=c++11 -g $INPUTS -o $output
+
+//added the commands to get the files needed to run
+
 g++ functions.cpp functions.h main.cpp -o $output
 
 # Done

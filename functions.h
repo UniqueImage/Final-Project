@@ -14,28 +14,21 @@
 #include <iostream>
 #include <cmath>
 
-
-
 ///////////////////////////////////////////////////////////////////
 // FUNCTION HEADERS GO HERE
 ///////////////////////////////////////////////////////////////////
+
+
 class frequencies{
-  std:: vector <int> triFreq;
 
- public:
-     void readFile();
-     void make_triFreq(std:: vector <int> triFreq){
-         for(int i = 0; i < 17575; i++){
-             triFreq.push_back(0);
-         }
-     }
-     frequencies(std::string filename, std:: vector <int> triFreq);
+  private:
+  std:: vector <int> triFreq;// creates the vector to be used 
 
-     frequencies();
-     frequencies(std::string filename);
+  public:
 
- };
+    frequencies(); // default constructor
+    frequencies(std::string filename);//parametrized constructor
 
+};
 
-
- #endif
+#endif

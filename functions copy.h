@@ -24,6 +24,8 @@ class frequencies{
 
   private:
   std:: vector <int> triFreq;// creates the vector to be used
+  std:: vector <vec_bin> traingLang; // to store the triFreq of each language 
+  std:: vector <vec_bin> testFile; // the test file frequency to be stored and compared
   
  
   
@@ -33,6 +35,7 @@ class frequencies{
 
     frequencies(); // default constructor
     frequencies(std::string filename);//parametrized constructor
+    double sim(std:: vector <int> triFreq); // parametrized constructor - takes in the triFreq vector?
 
 };
 
